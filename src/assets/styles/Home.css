@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .background-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 800px; /* Ajustez la hauteur selon vos besoins */
+    margin-top: 20px; /* Ajoutez de l'espace au-dessus de l'image */
+  }
+  
+  .right-image {
+    /* Ajustez la largeur de l'image selon vos besoins */
+    margin-right: 20px;
+    padding-right: 6%; /* Ajoutez de l'espace entre l'image et le bord droit */
+  } */
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Hauteur de la vidéo égale à la hauteur de la fenêtre */
+    overflow: hidden; /* Cache tout contenu dépassant de la vidéo */
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que la vidéo remplit complètement le conteneur */
+  }
+  
+  .video-container .content {
+    position: absolute;
+    top: 50%; /* Place le contenu au milieu verticalement */
+    left: 50%; /* Place le contenu au milieu horizontalement */
+    transform: translate(-50%, -50%); /* Centre le contenu */
+    color: white; /* Couleur du texte */
+    font-size: 24px; /* Taille de la police */
+  }

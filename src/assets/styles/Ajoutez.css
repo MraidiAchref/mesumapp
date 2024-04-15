@@ -1,0 +1,20 @@
+.artwork-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-input {
+    margin-bottom: 15px;
+  }
+  
+  .submit-btn {
+    margin-top: 20px;
+  }
+  
