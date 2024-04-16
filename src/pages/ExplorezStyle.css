@@ -1,0 +1,39 @@
+.museum-container {
+  margin-top: 120px;
+  background-image: url("../../public/Background-25.png");
+
+  box-shadow: 30px 0px 30px 0px;
+  padding-bottom: 50px;
+  
+}
+.games-container{
+  background-color: #0093E9;
+  background-image: linear-gradient(165deg, #0093E9 0%, #5eccfd 50%, #ff6d1a 100%);
+  box-shadow: 30px 0px 30px 0px;
+  padding-bottom: 10px;
+}
+
+
+h1{
+
+    padding-top: 30px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center; 
+}
+.iframeContainer {
+  width: 60%; 
+  height: 60vh;
+  overflow: hidden;
+}
+
+.game{
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+}
+.game-description{
+  margin: 40px;
+  width: 30%;
+}

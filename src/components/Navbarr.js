@@ -1,9 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-
+import "./NavbarStyle.css"
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../assets/images/Capture d’écran 2024-04-13 154756.jpg'; // Chemin de votre ima
+import GamePadIcon from './icons/GamePadIcon';
+import HomeIcon from './icons/HomeIcon';
+import AddIcon from './icons/AddIcon';
 
 function Navbarr() {
   return (
@@ -21,9 +24,24 @@ function Navbarr() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/home">Accueil</Nav.Link>
-            <Nav.Link href="/Explorez">explorez</Nav.Link>
-            <Nav.Link href="/ajout">Ajoutez</Nav.Link>
+
+            <div className='button-container'>
+              <HomeIcon/>
+              <Nav.Link href="/home">Accueil</Nav.Link>
+            </div>
+            
+
+            <div className='button-container'> 
+              <GamePadIcon/>              
+              <Nav.Link href="/Explorez" className="label-container"> Vistez</Nav.Link>            
+            </div>
+           
+           
+            <div className='button-container'> 
+              <AddIcon/>
+              <Nav.Link href="/ajout" className="label-container" >Ajoutez</Nav.Link>
+            </div>
+
             
           </Nav>
           <Nav>
@@ -32,6 +50,7 @@ function Navbarr() {
               se connecter
             </Nav.Link>
           </Nav>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
