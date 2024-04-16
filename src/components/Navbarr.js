@@ -33,7 +33,7 @@ function Navbarr() {
 
             <div className='button-container'> 
               <GamePadIcon/>              
-              <Nav.Link href="/Explorez" className="label-container"> Vistez</Nav.Link>            
+              <Nav.Link href="/Explorez" className="label-container"> Visitez</Nav.Link>            
             </div>
            
            
