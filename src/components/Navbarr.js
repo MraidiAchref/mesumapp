@@ -7,6 +7,7 @@ import logo from '../assets/images/Capture d’écran 2024-04-13 154756.jpg'; //
 import GamePadIcon from './icons/GamePadIcon';
 import HomeIcon from './icons/HomeIcon';
 import AddIcon from './icons/AddIcon';
+import AproposIcon from './icons/AproposIcon';
 
 function Navbarr() {
   return (
@@ -42,6 +43,10 @@ function Navbarr() {
               <Nav.Link href="/ajout" className="label-container" >Ajoutez</Nav.Link>
             </div>
 
+            <div className='button-container'> 
+              <AproposIcon/>
+              <Nav.Link href="/apropos" className="label-container" >A Propos </Nav.Link>
+            </div>
             
           </Nav>
           <Nav>
